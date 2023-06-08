@@ -3,7 +3,7 @@ let ano = prompt("Informe o ano: ")
 
 function ano_bissexto(ano) {
     let msg
-    if ((ano % 4 == 0) && (ano % 100 != 0) && (ano % 400 == 0)) {
+    if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0){ 
         msg = "O ano é bissexto"
     } else {
         msg = "O ano não é bissexto"
